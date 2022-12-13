@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Row, Col, NavLink, Nav } from 'react-bootstrap'
+import { Container, Row, Col, Nav } from 'react-bootstrap'
 import logo from '../assets/Vector.jpg'
-import loginimg from '../assets/image4.jpg'
+// import loginimg from '../assets/image4.jpg'
 
 export default function Login() {
 	return (
