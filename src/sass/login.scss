@@ -1,0 +1,83 @@
+@font-face{
+    src: url("../assets/fonts/Gotham Black Regular.ttf");
+    font-family: Gotham_black;
+}
+@font-face {
+    font-family: inter;
+    src: url("../assets/fonts/Inter-Regular.ttf");
+}
+
+.login{
+    background-color: $bgwhite;
+    // width: 1728px;
+    // height: 1117px;
+    
+        .logopic{
+            .logoimg{
+                position: relative;
+                    left:10px;
+                    top: 10px;
+                img{
+                    height: 28px;
+                    width: 35px;
+                    background: $primary;
+                    
+                }
+            }
+            .ellipse2{
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                background: $primary; 
+                left: 44.5px;
+                top: 14px;
+
+            }
+            .ellipse1{
+                position: absolute;
+                width: 6px;
+                height: 5px;
+                background: $bgwhite;  
+                left: 43px;
+                top: 13px;
+            } 
+            
+        }
+        .logoname{
+            h3{
+                // width: 149px;
+                // height: 27px;
+                font-family: Gotham_Black;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 1.6rem;
+                color: $black;
+            }
+        }
+
+    .createaccount{
+        h3{
+            font-family: inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.06rem;
+            .createlink{
+                font-weight: 600;
+                font-size: 0.875rem;
+                line-height: 1.06rem;
+                color: $primart2;
+            }
+        }
+    }
+    
+    div{
+        .loginimg{
+            position: absolute;
+            width: 700px;
+            height:700px;
+            // top:25px
+        }
+    }
+}
