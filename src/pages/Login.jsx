@@ -44,7 +44,7 @@ export default function Login() {
 									<h3 className="me-4">Don't have an account?</h3>
 									<h3>
 										<Nav.Link eventKey="link-event-key" className="createlink">
-											Create an account{' '}
+											Create an account
 										</Nav.Link>
 									</h3>
 								</div>
