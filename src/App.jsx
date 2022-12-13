@@ -1,5 +1,5 @@
 import '../src/sass/style.scss'
-
+import React from 'react'
 import Login from '../src/pages/Login'
 import Home from '../src/pages/Home'
 

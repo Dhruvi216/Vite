@@ -8,10 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "sass:compile": "sass --watch scss:css",
-    "prettier": "prettier --check'src//*.+(js|jsx|json|css|scss|md)'",
-    "prettier:fix": "prettier --write'src//*.+(js|jsx|json|css|scss|md)'",
-    "lint:code": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx,.cts,.mts --fix",
     "prepare": "husky install"
+   
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
@@ -37,7 +35,18 @@
     "vite": "^3.2.3"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
+    "*.{js,mjs,cjs}": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "useTabs": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
   }
 }
